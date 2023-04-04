@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor fotografii</title>
+    <link rel="stylesheet" href="./4_1089_POPA_ALEXANDRA_DIANA.css"/>
+</head>
+<body>
+    <h1>Upload your photo and start editing!</h1>
+    <div>
+        <input type="file" id="uploader" accept="image/*"/>
+    </div>
+    <div>
+        <label for="id_latime">Width:</label>
+        <input type="number" id="id_latime"/>
+    </div>
+    <div>
+        <label for="id_text">Text:</label>
+        <input type="text" id="id_text"/>
+        <label for="id_dimensiune">Text size(px):</label>
+        <input type="text" id="id_dimensiune"/>
+        <label for="id_culoare">Text color:</label>
+        <input type="text" id="id_culoare"/>
+        <label for="id_coordonate_x">Text position:</label>
+        <input type="number" id="id_coordonata_x"/>
+        <input type="number" id="id_coordonata_y"/>
+    </div>
+    <div>
+        <button id="id_button_select" title="Select an area.">Select</button>
+        <button id="id_button_crop" title="Select an area then crop your image.">Crop</button>
+        <button id="id_button_delete" title="Select an area then delete it.">Delete</button>
+        <button id="id_button_blur" title="Select an area then double click the blur button.">Blur</button>
+        <button id="id_button_grayscale" title="Select an area then apply the grayscale filter.">Grayscale</button>
+        <button id="id_button_resize" title="Fill in the Width first!">Resize</button>
+        <button id="id_button_add_text" title="Fill in the text,size,color and position first!">Add text</button>
+        <button id="id_button_save" title="Save your image!">Save</button>
+    </div>
+    <canvas id="id_canvas"></canvas>
+    <canvas id="id_overlay"></canvas>
+    
+    <script src="./4_1089_POPA_ALEXANDRA_DIANA.js"></script>
+</body>
+</html>
